@@ -93,7 +93,7 @@ namespace Calculator
             }
         }
 
-        public static Queue<string> postfix_notation_sorting(string input)
+        private static Queue<string> postfix_notation_sorting(string input)
         {
             const string pattern = @"(?<argument>[\d\,]+)|(?<operator>[\(\)\+\-\*\/\%\^])";
             Stack<string> stack = new Stack<string>();
@@ -116,7 +116,7 @@ namespace Calculator
             return argQueue;
         }
 
-        public static float Calculate(Queue<string> argQueue, bool show_steps)
+        private static float Calculate(Queue<string> argQueue, bool show_steps)
         {
 
             Stack<float> stack = new Stack<float>();
