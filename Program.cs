@@ -138,10 +138,7 @@ namespace Calculator
                 else
                 {
                     stack.Push(float.Parse(arg));
-
                 }
-
-
             }
             return stack.Pop();
         }
